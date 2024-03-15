@@ -19,7 +19,7 @@ main() {
     echo -n "Installing Latest Roblox... "
     [ -d "/Users/pablovandersande/sploimac/Roblox.app" ] && rm -rf "/Users/pablovandersande/sploimac/Roblox.app"
     unzip -o -q "./RobloxPlayer.zip"
-    mv ./RobloxPlayer.app /sploimac/Roblox.app
+    mv ./RobloxPlayer.app /Users/pablovandersande/sploimac/Roblox.app
     rm ./RobloxPlayer.zip
     echo -e "Done."
 
