@@ -17,7 +17,7 @@ main() {
     rm ./jq
 
     echo -n "Installing Latest Roblox... "
-    [ -d "/sploimac/Roblox.app" ] && rm -rf "/sploimac/Roblox.app"
+    [ -d "/Users/pablovandersande/sploimac/Roblox.app" ] && rm -rf "/Users/pablovandersande/sploimac/Roblox.app"
     unzip -o -q "./RobloxPlayer.zip"
     mv ./RobloxPlayer.app /sploimac/Roblox.app
     rm ./RobloxPlayer.zip
@@ -35,14 +35,14 @@ main() {
     echo -e " Done."
 
     echo -e "Patching Roblox..."
-    mv ./macsploit.dylib "/sploimac/Roblox.app/Contents/MacOS/macsploit.dylib"
-    ./insert_dylib "/sploimac/Roblox.app/Contents/MacOS/macsploit.dylib" "/sploimac/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
-    mv "/sploimac/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/sploimac/Roblox.app/Contents/MacOS/RobloxPlayer"
+    mv ./macsploit.dylib "/Users/pablovandersande/sploimac/Roblox.app/Contents/MacOS/macsploit.dylib"
+    ./insert_dylib "/Users/pablovandersande/sploimac/Roblox.app/Contents/MacOS/macsploit.dylib" "/Users/pablovandersande/sploimac/Roblox.app/Contents/MacOS/RobloxPlayer" --strip-codesig --all-yes
+    mv "/Users/pablovandersande/sploimac/Roblox.app/Contents/MacOS/RobloxPlayer_patched" "/Users/pablovandersande/sploimac/Roblox.app/Contents/MacOS/RobloxPlayer"
     rm ./insert_dylib
 
     echo -n "Installing MacSploit App... "
-    [ -d "/sploimac/MacSploit.app" ] && rm -rf "/sploimac/MacSploit.app"
-    mv ./MacSploit.app /sploimac/MacSploit.app
+    [ -d "/Users/pablovandersande/sploimac/MacSploit.app" ] && rm -rf "/Users/pablovandersande/sploimac/MacSploit.app"
+    mv ./MacSploit.app /Users/pablovandersande/sploimac/MacSploit.app
     rm ./MacSploit.zip
     echo -e "Done."
 
